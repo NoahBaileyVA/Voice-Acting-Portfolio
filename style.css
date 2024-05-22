@@ -10,16 +10,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content horizontally and vertically */
     background-color: #333;
     color: white;
     padding: 1em 0;
 }
 
 header .logo {
+    margin-right: 1em;
     margin-bottom: 0.5em; /* Adjust margin for better spacing */
 }
 
 header .logo img {
+    height: 50px;
     height: 70px; /* Increase logo size */
     width: auto;
 }
@@ -28,7 +32,6 @@ h1 {
     margin: 0;
     font-size: 1.5em; /* Increase font size for the main heading */
 }
-
 section {
     padding: 2em;
     margin: 1em auto;
@@ -37,13 +40,11 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
     margin-top: 0;
     margin-bottom: 1em; /* Add spacing below the section headings */
     font-size: 1.2em; /* Increase font size for section headings */
 }
-
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -61,11 +62,7 @@ h2 {
 .video img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.video img:hover {
+@@ -62,6 +70,13 @@ h2 {
     transform: scale(1.05);
 }
 
@@ -79,27 +76,3 @@ h2 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1em;
-    margin-top: 2em; /* Add spacing above the social links */
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #0073e6;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
