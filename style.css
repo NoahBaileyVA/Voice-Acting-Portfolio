@@ -11,7 +11,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content horizontally and vertically */
     background-color: #333;
     color: white;
     padding: 1em 0;
@@ -23,7 +22,6 @@ header .logo {
 }
 
 header .logo img {
-    height: 50px;
     height: 70px; /* Increase logo size */
     width: auto;
 }
@@ -32,6 +30,7 @@ h1 {
     margin: 0;
     font-size: 1.5em; /* Increase font size for the main heading */
 }
+
 section {
     padding: 2em;
     margin: 1em auto;
@@ -40,11 +39,13 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     margin-top: 0;
     margin-bottom: 1em; /* Add spacing below the section headings */
     font-size: 1.2em; /* Increase font size for section headings */
 }
+
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +63,11 @@ h2 {
 .video img {
     width: 100%;
     height: auto;
-@@ -62,6 +70,13 @@ h2 {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.video img:hover {
     transform: scale(1.05);
 }
 
@@ -99,4 +104,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0; /* Center the footer horizontally */
 }
