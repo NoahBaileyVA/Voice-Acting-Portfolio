@@ -83,7 +83,6 @@ h2 {
     justify-content: center;
     gap: 1em;
     margin-top: 2em; /* Add spacing above the social links */
-    padding-bottom: 5em; /* Add padding to the bottom */
 }
 
 .social-links a {
@@ -102,8 +101,7 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
-    position: fixed;
+    position: relative; /* Change position to relative */
     width: 100%;
     bottom: 0;
-    left: 0; /* Center the footer horizontally */
 }
