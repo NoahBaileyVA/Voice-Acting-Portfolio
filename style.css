@@ -53,13 +53,21 @@ h2 {
 
 .video img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 8px;
     transition: transform 0.3s;
 }
 
 .video img:hover {
     transform: scale(1.05);
+}
+
+.video p {
+    text-align: center;
+    margin: 0.5em 0 0;
+    font-weight: bold;
+    color: #333;
 }
 
 .social-links {
@@ -75,7 +83,7 @@ h2 {
     transition: color 0.3s;
 }
 
-social-links a:hover {
+.social-links a:hover {
     color: #0073e6;
 }
 
