@@ -83,6 +83,7 @@ h2 {
     justify-content: center;
     gap: 1em;
     margin-top: 2em; /* Add spacing above the social links */
+    padding-bottom: 5em; /* Add padding to the bottom */
 }
 
 .social-links a {
