@@ -54,8 +54,8 @@ h2 {
 }
 
 .video {
-    flex: 1 1 calc(35% - 1em); /* Five videos per row with a little larger space */
-    max-width: calc(35% - 1em); /* Ensures the videos do not exceed the row width */
+    flex: 1 1 calc(25% - 1em); /* Five videos per row with a little larger space */
+    max-width: calc(25% - 1em); /* Ensures the videos do not exceed the row width */
     box-sizing: border-box;
     position: relative; /* Added to position the image inside */
 }
