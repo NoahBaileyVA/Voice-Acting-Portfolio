@@ -8,19 +8,20 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content horizontally and vertically */
     background-color: #333;
     color: white;
     padding: 1em 0;
 }
 
 header .logo {
-    margin-right: 1em;
+    margin-bottom: 0.5em; /* Adjust margin for better spacing */
 }
 
 header .logo img {
-    height: 50px;
+    height: 70px; /* Increase logo size */
     width: auto;
 }
 
@@ -51,6 +52,13 @@ h2 {
     justify-content: center; /* Center the videos horizontally */
 }
 
+.video {
+    flex: 1 1 calc(25% - 1em); /* Four videos per row */
+    max-width: calc(25% - 1em);
+    box-sizing: border-box;
+    position: relative;
+}
+
 .video img {
     width: 100%;
     height: auto;
@@ -60,6 +68,13 @@ h2 {
 
 .video img:hover {
     transform: scale(1.05);
+}
+
+.video h3 {
+    text-align: center; /* Center video description */
+    margin: 0.5em 0 0;
+    font-weight: bold;
+    color: #333;
 }
 
 .social-links {
