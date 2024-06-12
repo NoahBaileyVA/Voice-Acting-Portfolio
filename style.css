@@ -10,7 +10,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
     background-color: #333;
     color: white;
     padding: 1em 0;
@@ -18,17 +18,17 @@ header {
 
 header .logo {
     margin-right: 1em;
-    margin-bottom: 0.5em; /* Adjust margin for better spacing */
+    margin-bottom: 0.5em;
 }
 
 header .logo img {
-    height: 70px; /* Increase logo size */
+    height: 70px;
     width: auto;
 }
 
 h1 {
     margin: 0;
-    font-size: 1.5em; /* Increase font size for the main heading */
+    font-size: 1.5em;
 }
 
 section {
@@ -42,22 +42,22 @@ section {
 
 h2 {
     margin-top: 0;
-    margin-bottom: 1em; /* Add spacing below the section headings */
-    font-size: 1.2em; /* Increase font size for section headings */
+    margin-bottom: 1em;
+    font-size: 1.2em;
 }
 
 .video-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    justify-content: center; /* Center the videos horizontally */
+    justify-content: center;
 }
 
 .video {
-    flex: 1 1 calc(25% - 1em); /* Five videos per row with a little larger space */
-    max-width: calc(25% - 1em); /* Ensures the videos do not exceed the row width */
+    flex: 1 1 calc(25% - 1em);
+    max-width: calc(25% - 1em);
     box-sizing: border-box;
-    position: relative; /* Added to position the image inside */
+    position: relative;
 }
 
 .video img {
@@ -72,36 +72,24 @@ h2 {
 }
 
 .video h3 {
-    text-align: center; /* Center video description */
+    text-align: center;
     margin: 0.5em 0 0;
     font-weight: bold;
     color: #333;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 2em; /* Add spacing above the social links */
+.testimonial {
+    margin-bottom: 1em;
+    padding: 1em;
+    border-left: 4px solid #333;
+    background-color: #f1f1f1;
+    border-radius: 4px;
 }
 
-.social-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
+.testimonial p {
+    margin: 0;
+    font-style: italic;
 }
 
-.social-links a:hover {
-    color: #0073e6;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    position: relative; /* Change position to relative */
-    width: 100%;
-    bottom: 0;
-}
+.testimonial cite {
+    display
