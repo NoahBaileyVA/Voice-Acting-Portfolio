@@ -97,26 +97,29 @@ h2 {
 }
 
 /* New Link Styles */
-a {
+#work-links a,
+#social-media a {
     color: #333;
     text-decoration: none;
     transition: color 0.3s, background-color 0.3s;
 }
 
-a:hover {
+#work-links a:hover,
+#social-media a:hover {
     color: #fff;
     background-color: #333;
     padding: 0.2em 0.5em;
     border-radius: 4px;
 }
 
-/* Specific Styles for Work Links and Social Media */
-#work-links ul, #social-media .social-links {
+#work-links ul, 
+#social-media .social-links {
     list-style: none;
     padding: 0;
 }
 
-#work-links li, .social-links a {
+#work-links li, 
+.social-links a {
     margin: 0.5em 0;
 }
 
