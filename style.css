@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     display: flex;
     flex-direction: column;
@@ -31,6 +33,7 @@ h1 {
     font-size: 1.5em;
 }
 
+/* Section Styles */
 section {
     padding: 2em;
     margin: 1em auto;
@@ -46,6 +49,7 @@ h2 {
     font-size: 1.2em;
 }
 
+/* Video Container Styles */
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +82,7 @@ h2 {
     color: #333;
 }
 
+/* Testimonial Styles */
 .testimonial {
     margin-bottom: 1em;
     padding: 1em;
@@ -91,5 +96,31 @@ h2 {
     font-style: italic;
 }
 
-.testimonial cite {
-    display
+/* New Link Styles */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #333;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+}
+
+/* Specific Styles for Work Links and Social Media */
+#work-links ul, #social-media .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+#work-links li, .social-links a {
+    margin: 0.5em 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 1em;
+}
