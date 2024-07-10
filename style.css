@@ -146,3 +146,39 @@ footer a {
 footer a:hover {
     color: #ddd;
 }
+/* Horizontal Scroll Wheel for Voice Demos */
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 1em 0;
+}
+
+.horizontal-scroll .video {
+    flex: 0 0 auto;
+    margin-right: 1em;
+    max-width: 100%;
+}
+
+.horizontal-scroll .video iframe {
+    width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+.horizontal-scroll .video h3 {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Remove default scroll bar styling */
+.horizontal-scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
