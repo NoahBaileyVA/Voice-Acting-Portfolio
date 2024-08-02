@@ -135,14 +135,12 @@ h2 {
     cursor: pointer;
     display: block;
     margin-bottom: 10px;
-    padding: 0.2em 0.5em; /* Same padding as regular links */
-    border-radius: 4px; /* Same border radius as regular links */
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s;
 }
 
 .expandable:hover {
     color: #fff;
-    background-color: #333;
+    background-color: transparent; /* No background color change */
 }
 
 .expandable-content {
@@ -155,14 +153,12 @@ h2 {
     color: #333;
     text-decoration: none;
     margin-bottom: 5px;
-    padding: 0.2em 0.5em; /* Same padding as regular links */
-    border-radius: 4px; /* Same border radius as regular links */
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s;
 }
 
 .expandable-content a:hover {
     color: #fff;
-    background-color: #333;
+    background-color: transparent; /* No background color change */
 }
 
 /* Footer Styles */
