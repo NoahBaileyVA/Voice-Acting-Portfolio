@@ -1,181 +1,118 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    line-height: 1.6;
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Header Styles */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-}
-
-header .logo {
-    margin-right: 1em;
-    margin-bottom: 0.5em;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 header .logo img {
-    height: 70px;
-    width: auto;
+    max-width: 100px;
 }
 
 h1 {
     margin: 0;
-    font-size: 1.5em;
 }
 
-/* Section Styles */
 section {
-    padding: 2em;
-    margin: 1em auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 1em;
-    font-size: 1.2em;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
 }
 
-/* Video Container Styles */
 .video-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
+    gap: 10px;
 }
 
 .video {
-    flex: 1 1 calc(25% - 1em);
-    max-width: calc(25% - 1em);
+    width: calc(25% - 10px);
     box-sizing: border-box;
-    position: relative;
 }
 
 .video img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
+    display: block;
+    border: 1px solid #ddd;
 }
 
-.video img:hover {
-    transform: scale(1.05);
-}
-
-.video h3 {
-    text-align: center;
-    margin: 0.5em 0 0;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Testimonial Styles */
 .testimonial {
-    margin-bottom: 1em;
-    padding: 1em;
-    border-left: 4px solid #333;
-    background-color: #f1f1f1;
-    border-radius: 4px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
-.testimonial p {
-    margin: 0;
+.testimonial cite {
+    display: block;
+    margin-top: 5px;
     font-style: italic;
 }
 
-/* New Link Styles */
-#work-links a,
-#social-media a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-#work-links a:hover,
-#social-media a:hover {
-    color: #fff;
-    background-color: #333;
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
-}
-
-#work-links ul, 
-#social-media .social-links {
+#work-links ul {
     list-style: none;
     padding: 0;
 }
 
-#work-links li, 
-.social-links a {
-    margin: 0.5em 0;
-}
-
-.social-links a {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-/* Expandable Content Styles */
-.expandable {
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
+#work-links li {
     margin-bottom: 10px;
-    transition: color 0.3s;
+}
+
+.expandable {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 5px;
 }
 
 .expandable:hover {
-    color: #fff;
-    background-color: transparent; /* No background color change */
+    color: #0056b3;
 }
 
 .expandable-content {
     display: none;
-    padding-left: 1em; /* Indent content to align with expandable link */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
 }
 
 .expandable-content a {
-    display: block;
-    color: #333;
+    color: #007bff;
     text-decoration: none;
-    margin-bottom: 5px;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px;
 }
 
 .expandable-content a:hover {
-    color: #fff;
-    background-color: transparent; /* No background color change */
+    color: #0056b3;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    margin-top: 2em;
-}
-
-footer a {
-    color: white;
+#social-media .social-links a {
+    color: #007bff;
     text-decoration: none;
-    transition: color 0.3s;
+    margin: 0 10px;
 }
 
-footer a:hover {
-    color: #ddd;
+#social-media .social-links a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
