@@ -135,14 +135,19 @@ h2 {
     cursor: pointer;
     display: block;
     margin-bottom: 10px;
+    padding: 0.2em 0.5em; /* Same padding as regular links */
+    border-radius: 4px; /* Same border radius as regular links */
     transition: color 0.3s, background-color 0.3s;
 }
 
 .expandable:hover {
     color: #fff;
     background-color: #333;
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
+}
+
+.expandable-content {
+    display: none;
+    padding-left: 1em; /* Indent content to align with expandable link */
 }
 
 .expandable-content a {
@@ -150,14 +155,14 @@ h2 {
     color: #333;
     text-decoration: none;
     margin-bottom: 5px;
+    padding: 0.2em 0.5em; /* Same padding as regular links */
+    border-radius: 4px; /* Same border radius as regular links */
     transition: color 0.3s, background-color 0.3s;
 }
 
 .expandable-content a:hover {
     color: #fff;
     background-color: #333;
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
 }
 
 /* Footer Styles */
