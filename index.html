@@ -6,40 +6,31 @@
     <title>Noah Bailey Voice Acting</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Dropdown container */
-        .dropdown {
-            position: relative;
-            display: inline-block;
+        .expandable {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        /* Dropdown content (hidden by default) */
-        .dropdown-content {
+        .expandable-content {
             display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+            margin-left: 20px;
         }
 
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .expandable:hover {
+            text-decoration: underline;
         }
     </style>
+    <script>
+        function toggleExpandableContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -147,16 +138,16 @@
     <section id="work-links">
         <h2>Where to Find My Work</h2>
         <ul>
-            <li class="dropdown">
-                <a href="https://www.nexusmods.com/newvegas/mods/83967" target="_blank">Fallout New Vegas: Encounters of the Mojave</a>
-                <div class="dropdown-content">
+            <li>
+                <span class="expandable" onclick="toggleExpandableContent('mojave-content')">Fallout New Vegas: Encounters of the Mojave</span>
+                <div class="expandable-content" id="mojave-content">
                     <a href="https://www.nexusmods.com/newvegas/mods/83967" target="_blank">Mod</a>
                     <a href="https://youtu.be/Y0jBTgqX58o?si=bzxELWl9DP1lyygG" target="_blank">Clip</a>
                 </div>
             </li>
-            <li class="dropdown">
-                <a href="https://www.nexusmods.com/newvegas/mods/51983" target="_blank">Fallout New Vegas: Factions Reloaded</a>
-                <div class="dropdown-content">
+            <li>
+                <span class="expandable" onclick="toggleExpandableContent('factions-content')">Fallout New Vegas: Factions Reloaded</span>
+                <div class="expandable-content" id="factions-content">
                     <a href="https://www.nexusmods.com/newvegas/mods/51983" target="_blank">Mod</a>
                     <a href="https://www.youtube.com/watch?v=HbQX5LBH5zQ&ab_channel=ToxicWhiteout" target="_blank">Clip</a>
                 </div>
